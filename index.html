@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1><a href="index.html">SITENAME</a></h1>
+    <nav>
+      <a id="menu-movies" onclick="switchTab(event, 'movies')">Movie Sites</a>
+      <a id="menu-series" onclick="switchTab(event, 'series')">Other Sites</a>
+      <a id="menu-apps" onclick="switchTab(event, 'apps')">Apps</a>
+    </nav>
+  </header>
+
+  <div class="marquee-animation">
+    <p>Choose The Best Websites and Apps To Watch & Download Your Favorite Movies and Series and Anime.
+      </p>
+  </div>
+
+  <main>
+    <section id="movies-section">
+      <h2>Movies Sites</h2>
+      <div id="movies-container" class="card-container"></div>
+    </section>
+
+    <section id="series-section">
+      <h2>Other</h2>
+      <div id="series-container" class="card-container"></div>
+    </section>
+
+    <section id="apps-section">
+      <h2>Mobile Apps</h2>
+      <div id="apps-container" class="card-container"></div>
+    </section>
+
+  </main>
+
+
+
+
+  <footer>
+    <p>&copy; 2026 SITENAME | Made With ❤</p>
+  </footer>
+
+
+  <script src="database.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

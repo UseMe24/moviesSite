@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: #0d0d11;
+    color: #e2e8f0;
+}
+
+header {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #161622 0%, #0d0d11 100%);
+    border-bottom: 3px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+@media screen and (min-width: 700px) {
+    header {
+        padding: 5PX 30PX;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    header {
+        padding: 5PX 60PX;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: red;
+}
+
+@media screen and (max-width: 500px) {
+    header h1 {
+        font-size: 1.5em;
+        margin-bottom: 7px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #00f2fe;
+    opacity: .6;
+    transition: all .6s ease;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    padding: 3px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+    nav a {
+        font-weight: 200;
+    }
+}
+
+
+
+nav a.active {
+    border-bottom: 2px solid red;
+    opacity: 1;
+    background-color: #099dfb30;
+}
+
+
+.marquee-animation {
+    width: 100%;
+    overflow: hidden;
+    background-color: #0f2943;
+    padding: 3px;
+    alignment-baseline: baseline;
+}
+
+.marquee-animation p {
+    display: inline-block;
+    white-space: nowrap;
+    transform: translateX(100%);
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+section h2 {
+    display: inline-block;
+    color: orange;
+    margin: 10px;
+    padding: 4px 13px 2px 5px;
+    border-left: 3px solid red;
+    border-bottom: 3px solid red;
+}
+
+.card-container {
+    background-color: #2d5d7b30;
+    padding: 10px;
+}
+
+
+@media screen and (min-width: 650px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+    background-color: #000;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    flex-grow: 1;
+    box-shadow: 0 0 2px .3px red inset;
+}
+.card:last-child{
+    flex-grow: 0;
+    margin: auto;
+}
+
+.card .siteDetails{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card img{
+    display: block;
+    width: 50%;
+    height: 0;
+    margin: auto;
+    background-color: #000;
+    transition: all 1s ease;
+}
+
+.card h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: red;
+}
+
+.card ul {
+    padding-left: 20px;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.card ul li {
+    margin: 5px 0;
+    margin-left: 10px;
+}
+
+
+.tag {
+    display: inline-block;
+    margin: 4px;
+    background: #414141;
+    border-radius: 10px;
+    padding: 3px 7px;
+    font-size: 13px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 4px;
+    background: linear-gradient(90deg, red,blue);
+    text-decoration: none;
+    font-weight: bold;
+    color: orange;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* .btn:hover {} */
+
+footer {
+    background-color: #08080b;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-top: 1px solid #161622;
+}
+
+footer p {
+    color: #64748b;
+}
