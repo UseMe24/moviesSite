@@ -36,6 +36,6 @@ const movieDatabase = [
         'image': "",
         "url": "https://hdhub4u.tv/",
         "tags": ["Everyhings"],
-        "html": "working"
+        "html": "<p style='color: red'>Working</p>"
     },
 ];
