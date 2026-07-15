@@ -10,7 +10,7 @@ function initDirectory() {
         site.siteFeatures.forEach(feature => { featuresList += `<li>${feature}</li>`; });
         if (addhtml != "") {
             featuresList += `<li>${addhtml}</li>`;
-        };
+        }
         featuresList += '</ul>';
 
         let tagsList = '<div class="tags-container">';
