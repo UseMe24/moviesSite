@@ -32,11 +32,8 @@ const movieDatabase = [
         "url": "https://hdhub4u.tv/",
         "tags": ["Movie", "Series"],
         "html": `<details>
-        <summury>
-  Preview Site
-  </summury>
+        <summary>Preview Site</summary>
       <img src="https://images.unsplash.com/photo-1783763625078-e015b4b42a92?q=80&w=726&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-  
 </details>`
     },
     {
