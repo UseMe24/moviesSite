@@ -22,7 +22,7 @@ const movieDatabase = [
         "url": "https://hdhub4u.tv/",
         "tags": ["Movie", "Series"]
     },
-     {
+    {
         "siteName": "Movie Box",
         "category": "Apps",
         "siteFeatures": [
@@ -32,8 +32,9 @@ const movieDatabase = [
             'Hindi Dubbed',
             'Korean',
         ],
-         'image': "",
+        'image': "",
         "url": "https://hdhub4u.tv/",
-        "tags": ["Everyhings"]
-    }
+        "tags": ["Everyhings"],
+        "html": "<h1>Working</h1>"
+    },
 ];

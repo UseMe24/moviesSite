@@ -5,8 +5,12 @@ const appsContainer = document.getElementById('apps-container');
 
 function initDirectory() {
     movieDatabase.forEach(site => {
+        let addhtml = site.html;
         let featuresList = '<ul>';
         site.siteFeatures.forEach(feature => { featuresList += `<li>${feature}</li>`; });
+        if (addhtml != "") {
+            featuresList += `<li>${addhtml}</li>`;
+        };
         featuresList += '</ul>';
 
         let tagsList = '<div class="tags-container">';
