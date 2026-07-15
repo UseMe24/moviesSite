@@ -23,7 +23,6 @@ function initDirectory() {
                             <div class="siteDetails" id="hello">
                                 <h3>${site.siteName}</h3>
                             </div>
-                                    <img src="${site.image}" alt="sitePreview">
                             ${featuresList}
                         </div>
                         <div>
