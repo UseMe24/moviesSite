@@ -197,6 +197,9 @@ section h2 {
     font-size: 15px;
     margin: 10px;
 }
+.card ul img{
+    width: 50%;
+}
 
 .card ul li {
     margin: 5px 0;
