@@ -234,7 +234,9 @@ section h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* .btn:hover {} */
+.btn:hover {
+    opacity: .7;
+}
 
 footer {
     background-color: #08080b;
