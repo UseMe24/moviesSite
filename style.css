@@ -206,7 +206,9 @@ section h2 {
     margin-left: 10px;
 }
 
-
+.card details img {
+    display: block;
+}
 .tag {
     display: inline-block;
     margin: 4px;
